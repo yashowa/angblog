@@ -1,0 +1,11 @@
+<div [ngClass]='getClass(positem.loveits)' >
+  <i class="align-right">{{positem.date | date }}</i>
+  <h2>{{positem.title}}</h2>
+<p>{{positem.content}}</p>
+<small><i class="glyphicon glyphicon-user"></i>{{positem.loveits}}</small>
+
+<div class="button-group">
+  <button class="btn btn-success" (click)='updateLove(1)'> love it</button>
+  <button class="btn btn-danger" (click)='updateLove(-1)'> dont love it</button>
+</div>
+</div>
